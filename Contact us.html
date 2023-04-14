@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MYBOOKSTORE</title>
+</head>
+
+<!--start body-->
+
+<body>
+    <!--start header-->
+    <header>
+        <!--liens vers les autres pages du site web dans la partie header -->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Contactus.html">Contact us</a></li>
+        </ul>
+    </header>
+    <!--end header-->
+
+
+    <!--start main-->
+    <main>
+        <h1>Registration form</h1>
+        <p>Please fill out this form with the required information</p>
+        <form>
+            <div>
+                <label for="first-name">First Name</label>
+                <input id="first-name" type="text" required />
+            </div>
+            <div>
+                <label for="last-name">Last Name</label>
+                <input id="last-name" type="text" required />
+            </div>
+            <div>
+                <label for="nick-name">Nick Name</label>
+                <input id="nick-name" type="text" />
+            </div>
+            <div>
+                <label for="email">e-mail</label>
+                <input id="email" type="text" required />
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input id="password" type="password" pattern="[a-z0-5]{8,}" required />
+            </div>
+            <div>
+                <label for="birth-date">Date of Birth</label>
+                <input type="date" id="birth-date" />
+            </div>
+            <div>
+                <p>Gender</p>
+                <div>
+                    <input id="Male" type="radio" value="Male" name="Gender" />
+                    <label for="Male">Male</label>
+
+                </div>
+                <div>
+                    <input id="Female" type="radio" value="Female" name="Gender" />
+                    <label for="Female">Female</label>
+
+
+                </div>
+                <div>
+                    <input id="Others" type="radio" value="Others" name="Gender" />
+                    <label for="Others">Others</label>
+
+                </div>
+            </div>
+            <div>
+                <label for="mobile">Mobile:</label>
+                <input id="mobile" type="number" required />
+            </div>
+            <div>
+                <p>adress</p>
+                <textarea id="adress" name="adress" rows="3" cols="30" placeholder="your adress please"></textarea>
+            </div>
+            <div>
+                <input name="submit" value="Submit" id="submit" type="submit" />
+                <input name="Reset" value="reset" id="reset" type="reset" />
+            </div>
+        </form>
+
+    </main>
+    <!--end main-->
+
+</body>
+<!-- end body-->
+
+</html>
